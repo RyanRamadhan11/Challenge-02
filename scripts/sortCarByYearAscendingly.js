@@ -24,11 +24,6 @@ function sortCarByYearAscendingly(cars) {
     }
   }
 
-  // Array Method - Ascendingly
-  //result.sort((a, b) => {
-  //return a.year - b.year;
-  //}); 
-
   // Rubah code ini dengan array hasil sorting secara descending
   console.log(result);
   return result;
