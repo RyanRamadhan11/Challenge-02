@@ -17,15 +17,12 @@ function sortCarByYearDescendingly(cars) {
       //membandingkan dua elemen yang berdekatan
       //ubah > menjadi < untuk mengurutkan dalam descending order
       if (result[j].year < result[j + 1].year) {
-        [result[j], result[j + 1]] = [result[j + 1], result[j]];
+        let temp = result[j]                          
+        result[j] = result[j + 1]                   
+        result[j + 1] = temp
       }
     }
   }
-
-  // Array Method - Descendingly
-  // result.sort((a, b) => {
-  //   return b.year - a.year;
-  // });
 
   // Rubah code ini dengan array hasil sorting secara descending
   console.log(result);
