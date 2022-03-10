@@ -13,11 +13,13 @@ function sortCarByYearAscendingly(cars) {
   //loop untuk mengakses setiap elemen array
   for (let i = 0; i < result.length; i++) {
     //loop untuk membandingkan elemen array
-    for (let j = 0; j < result.length - i - 1; j++) {
+    for (let j = 0; j < result.length  - 1; j++) {
       //membandingkan dua elemen yang berdekatan
       //ubah > menjadi < untuk mengurutkan dalam descending order
-      if (result[j].year > result[j + 1].year) {
-        [result[j], result[j + 1]] = [result[j + 1], result[j]];
+      if (result[j].year > result[j + 1].year) {           
+            let temp = result[j]                          
+            result[j] = result[j + 1]                   
+            result[j + 1] = temp
       }
     }
   }
