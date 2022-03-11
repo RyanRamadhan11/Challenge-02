@@ -9,7 +9,6 @@ function sortCarByYearDescendingly(cars) {
   const result = [...cars];
   
   // Tulis code-mu disini
-  // Manual - Bubble Sort
   //loop untuk mengakses setiap elemen array
   for (let i = 0; i < result.length; i++) {
     //loop untuk membandingkan elemen array
@@ -25,6 +24,6 @@ function sortCarByYearDescendingly(cars) {
   }
 
   // Rubah code ini dengan array hasil sorting secara descending
-  console.log(result);
   return result;
 }
+
