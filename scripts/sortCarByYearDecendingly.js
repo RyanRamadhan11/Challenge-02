@@ -16,9 +16,9 @@ function sortCarByYearDescendingly(cars) {
       //membandingkan dua elemen yang berdekatan
       //ubah > menjadi < untuk mengurutkan dalam descending order
       if (result[j].year < result[j + 1].year) {
-        let temp = result[j]                          
+        let penyimpanan = result[j]                          
         result[j] = result[j + 1]                   
-        result[j + 1] = temp
+        result[j + 1] = penyimpanan
       }
     }
   }
